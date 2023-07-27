@@ -1,6 +1,4 @@
-create table hall(
-hallID serial primary key , 
-capacity int check(capacity>=40)
+CREATE TABLE Hall(
+HallID int primary key,
+NumberOfSeats int CHECK(NumberOfSeats< 40) NOT NULL
 );
-
-

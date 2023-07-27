@@ -1,5 +1,7 @@
-create table showing(
-startTime time NOT NULL,
-endTime time NOT NULL,
-movieID varchar REFERENCES movie(movieID),
-hallID int references hall(hallID));
+CREATE TABLE Showing(
+ShowingID varchar(5) primary key,
+date DATE  NOT NULL,
+time TIME  NOT NULL,
+movieID VARCHAR(5) , FOREIGN KEY (movieID ) REFERENCES Movie,
+HallID int, FOREIGN KEY (HallID) REFERENCES Hall
+);

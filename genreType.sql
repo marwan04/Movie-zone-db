@@ -1,3 +1,4 @@
-create table genreType(
-movieID varchar REFERENCES movie(movieID),
-genreID int REFERENCES genre(genreID)); 
+CREATE TABLE Movie_Genres(
+movieID VARCHAR(5) , FOREIGN KEY (movieID) REFERENCES Movie,
+genreID int , FOREIGN KEY (genreID) REFERENCES Genre
+);
