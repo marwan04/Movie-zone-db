@@ -1,0 +1,5 @@
+CREATE TABLE Movie_Actors(
+nameRole varchar(10)  NOT NULL,
+movieID VARCHAR(5) , FOREIGN KEY (movieID) REFERENCES Movie,
+SSN INT , FOREIGN KEY (SSN) REFERENCES Actors
+);
