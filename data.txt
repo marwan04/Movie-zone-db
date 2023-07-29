@@ -1,0 +1,65 @@
+INSERT INTO customers (national_ID, email, first_name, middle_name, last_name, phoneNumber, age, gender, address, nationality, DOB) VALUES ('1546789670', 'vel.est@protonmail.ca', 'Althea', 'James', 'Glass', '3785122334', '45','M','2141 Semper St.','Nigeria','1978-11-24');
+INSERT INTO customers (national_ID, email, first_name, middle_name, last_name, phoneNumber, age, gender, address, nationality, DOB) VALUES ('2345413270', 'ante@google.edu', 'Chadwick', 'Roger', 'Watts', '4015285535', '35','M','1655 Ultricies St.','Belgium','1988-02-09');
+INSERT INTO customers (national_ID, email, first_name, middle_name, last_name, phoneNumber, age, gender, address, nationality, DOB) VALUES ('1679564882', 'consectetuer@icloud.com', 'Idola', 'Jeffery', 'Sheppard', '9728565574', '55','F','5014 Ac Street','Ukraine','1968-06-19');
+INSERT INTO customers (national_ID, email, first_name, middle_name, last_name, phoneNumber, age, gender, address, nationality, DOB) VALUES ('0345216998', 'vel.pede.blandit@yahoo.ca', 'Fredericka', 'Johan', 'Goodwin', '3254978188', '29','F','2132 Ullamcorper Rd.','New Zealand','1994-10-31');
+
+
+INSERT INTO movie (movieID, title, duration, revenue, year) VALUES ('m0001', 'Uncharted',2, 401.7,'2022');
+INSERT INTO movie (movieID, title, duration, revenue, year) VALUES ('m0002', 'Due Date',2, 50.7,'2010');
+INSERT INTO movie (movieID, title, duration, revenue, year) VALUES ('m0003', 'Starsky & Hutch',2, 30.1,'2004');
+INSERT INTO movie (movieID, title, duration, revenue, year) VALUES ('m0004', 'Harry Potter',2, 789.5,'2001');
+INSERT INTO movie (movieID, title, duration, revenue, year) VALUES ('m0005', 'Mrs. Doubtfire',2, 441.5,'1993');
+INSERT INTO movie (movieID, title, duration, revenue, year) VALUES ('m0006', 'spider man',2, 800,'2021');
+INSERT INTO movie (movieID, title, duration, revenue, year) VALUES ('m0007', 'Spenser Confidential',2, 500,'2020');
+
+
+INSERT INTO Genre (Name) VALUES('Action');
+INSERT INTO Genre (Name) VALUES('Comedy');
+INSERT INTO Genre (Name) VALUES('Drama');
+INSERT INTO Genre (Name) VALUES('Horror');
+
+
+INSERT INTO Hall (HallID,NumberOfSeats) VALUES (1, 30);
+INSERT INTO Hall (HallID,NumberOfSeats) VALUES (2, 15);
+INSERT INTO Hall (HallID, NumberOfSeats) VALUES (3, 25);
+
+
+INSERT INTO Actors (SSN, Name, Gender,age) VALUES (1, 'Tom Holland', 'M','26');
+INSERT INTO Actors (SSN, Name, Gender,age ) VALUES (2, 'Mark Wahlberg', 'M','51');
+INSERT INTO Actors (SSN, Name, Gender,age ) VALUES (3, 'Sophia Ali', 'F','27');
+INSERT INTO Actors (SSN, Name, Gender,age ) VALUES (4, 'Zach Galifianakis', 'M','53');
+INSERT INTO Actors (SSN, Name, Gender,age ) VALUES (5, 'Michelle Monaghan', 'F',46);
+INSERT INTO Actors (SSN, Name, Gender,age ) VALUES (6, 'Robert Downey Jr.', 'M','57');
+INSERT INTO Actors (SSN, Name, Gender,age ) VALUES (7, 'Paul Michael Glaser', 'M', '79');
+INSERT INTO Actors (SSN, Name, Gender,age ) VALUES (8, 'David Soul', 'M','79');
+INSERT INTO Actors (SSN, Name, Gender,age ) VALUES (9, 'Ben Stiller', 'M','57');
+INSERT INTO Actors (SSN, Name, Gender,age ) VALUES (10, 'Daniel Radcliffe', 'M','33');
+INSERT INTO Actors (SSN, Name, Gender,age ) VALUES (11, 'Emma Watson', 'F','32');
+INSERT INTO Actors (SSN, Name, Gender,age ) VALUES (12, 'Rupert Grint', 'M','34');
+INSERT INTO Actors (SSN, Name, Gender,age ) VALUES (13, 'Robin Williams', 'M','72');
+INSERT INTO Actors (SSN, Name, Gender,age ) VALUES (14, 'Mara Wilson', 'F','35');
+INSERT INTO Actors (SSN, Name, Gender,age ) VALUES (15, 'Pierce Brosnan', 'M','69');
+INSERT INTO Actors (SSN, Name, Gender,age ) VALUES (16, 'Zendaya', 'F','26');
+INSERT INTO Actors (SSN, Name, Gender,age ) VALUES (17, 'Tobey Maguire', 'M','47');
+INSERT INTO Actors (SSN, Name, Gender,age ) VALUES (18, 'Marisa Tomei', 'F','58');
+INSERT INTO Actors (SSN, Name, Gender,age ) VALUES (19, 'Winston Duke', 'M','36');
+INSERT INTO Actors (SSN, Name, Gender,age ) VALUES (20, 'Iliza Shlesinger', 'F','39');
+INSERT INTO Actors (SSN, Name, Gender,age ) VALUES (21, 'Alan Arkin', 'M','88');
+
+
+INSERT INTO Movie_Actors(nameRole, movieID, SSN) VALUES ('1stMain','m0001',1);
+INSERT INTO Movie_Actors(nameRole, movieID, SSN) VALUES ('2ndMain','m0001',2);
+INSERT INTO Movie_Actors(nameRole, movieID, SSN) VALUES ('CO Main','m0001',3);
+
+INSERT INTO Movie_Actors(nameRole, movieID, SSN) VALUES ('1stMain','m0002',4);
+INSERT INTO Movie_Actors(nameRole, movieID, SSN) VALUES ('2ndMain','m0002',6);
+INSERT INTO Movie_Actors(nameRole, movieID, SSN) VALUES ('CO Main','m0002',5);
+
+
+INSERT INTO Movie_Actors(nameRole, movieID, SSN) VALUES ('1stMain','m0003',7);
+INSERT INTO Movie_Actors(nameRole, movieID, SSN) VALUES ('2ndMain','m0003',8);
+INSERT INTO Movie_Actors(nameRole, movieID, SSN) VALUES ('CO Main','m0003',9);
+
+INSERT INTO Movie_Actors(nameRole, movieID, SSN) VALUES ('1stMain','m0004',10);
+INSERT INTO Movie_Actors(nameRole, movieID, SSN) VALUES ('2ndMain','m0004',11);
+INSERT INTO Movie_Actors(nameRole, movieID, SSN) VALUES ('3rdMain','m0004',12);
